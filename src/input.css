@@ -3,3 +3,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register-form input {
+    background-color: #F3F3F3;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.register-form label {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #142214;
+}
+
+.register-form button {
+    background-color: #EAFF5F;
+    padding: 16px;
+}
