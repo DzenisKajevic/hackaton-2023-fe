@@ -6,6 +6,7 @@
 
 * {
     font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 h1,
@@ -18,18 +19,55 @@ h6 {
 }
 
 .register-form input {
-    background-color: #F3F3F3;
+    background-color: #1E301E;
     padding: 16px;
     border-radius: 6px;
+    color:white
+}
+
+.register-form input:focus {
+    outline: 1px solid white;
+    background-color: #0D160D;
 }
 
 .register-form label {
     margin-bottom: 7px;
     font-size: 14px;
+    color: white;
+}
+
+.primary-button {
+    background-color: #EAFF5F;
+    border-radius: 6px;
     color: #142214;
+    padding: 16px 35px;
 }
 
 .register-form button {
     background-color: #EAFF5F;
+    color: #142214;
     padding: 16px;
+}
+
+.device-box {
+    transition: all 0.2s;
+}
+
+.device-box:hover {
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.device-box:hover .circle {
+    background-color: #757575;
+}
+
+.device-box:hover p {
+    color: #142214;
+}
+
+.add-new-device {
+    background-color: #40474E;
+    transition: all 0.2s;
 }

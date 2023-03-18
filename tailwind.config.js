@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#ffffff",
-        secondary: "#142214",
+        primary: "#142214",
+        secondary: "#ffffff",
         accent: "#EAFF5F",
         text: "#757575",
+        grey: "#B4C0CE",
         lgrey: "#F3F3F3",
-        blue: "#00A3FF"
+        blue: "#00A3FF",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
