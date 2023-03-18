@@ -67,7 +67,25 @@ h6 {
     color: #142214;
 }
 
-.add-new-device {
+.add-new {
     background-color: #40474E;
     transition: all 0.2s;
+}
+
+.add-new:hover {
+    background-color: #EAFF5F;
+    cursor: pointer;
+}
+
+.add-new:hover p {
+    color: #142214;
+}
+
+.profile-avatar {
+    transition: 0.2s all;
+}
+
+.profile-avatar img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }

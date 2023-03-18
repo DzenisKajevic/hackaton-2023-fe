@@ -9,6 +9,8 @@ module.exports = {
         accent: "#EAFF5F",
         text: "#757575",
         grey: "#B4C0CE",
+        grey2: "#757575",
+        grey3: "#343333",
         lgrey: "#F3F3F3",
         blue: "#00A3FF",
       },
@@ -19,6 +21,7 @@ module.exports = {
     },
     screens: {
       xs: "480px",
+      ms: "530px",
       ss: "620px",
       sm: "768px",
       md: "1060px",

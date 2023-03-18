@@ -1,4 +1,4 @@
-import {door,thermostat,bulb} from '../assets'
+import {door,thermostat,bulb,avatar} from '../assets'
 
 export const devicesSample = [
     {
@@ -21,5 +21,64 @@ export const devicesSample = [
       icon:bulb,
       title: "Kupatilo",
     },
+    {
+      icon:bulb,
+      title: "SEX",
+    },
+    {
+      icon:bulb,
+      title: "Kupatilo",
+    },
+    {
+      icon:bulb,
+      title: "Kupatilo",
+    },
+    {
+      icon:bulb,
+      title: "Kupatilo",
+    },
     
+];
+
+export const profilesSample = [
+  {
+    avatar:avatar,
+    role: "admin" 
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  {
+    avatar:avatar,
+    role: "kitagola"
+  },
+  
+  
+
+  
 ];

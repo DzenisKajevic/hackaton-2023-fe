@@ -17,7 +17,7 @@ const Dashboard = () => {
                         title={device.title}
                     />
                 ))}
-                <div className='flex flex-col items-center justify-center aspect-square rounded-[10px] border-[2px] border-[#343333] add-new-device'>
+                <div className='flex flex-col items-center justify-center aspect-square rounded-[10px] add-new'>
                     <p className='text-secondary font-bold text-[60px] mb-[10px]'>+</p>
                 </div>
             </div>
