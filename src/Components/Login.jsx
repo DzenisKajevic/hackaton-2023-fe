@@ -4,24 +4,24 @@ const Login = () => {
     return (
         <div>
             <div>
-                <h4 class="font-monserrat font-bold">Welcome Back</h4>
-                <p class="font-lato">Please enter your login details to access your account.</p>
+                <h4 className="font-monserrat font-bold">Welcome Back</h4>
+                <p className="font-lato">Please enter your login details to access your account.</p>
 
             </div>
             <div>
                 <div>
-                    <label class=" font-lato" for="">Email</label>
+                    <label className=" font-lato" htmlFor="">Email</label>
                     <input type="text" id="email" name="email" />
                 </div>
             </div>
             <div>
-                <label class="font-lato" for="">Password</label>
+                <label className="font-lato" htmlFor="">Password</label>
                 <input type="text" id="password" name="password" />
             </div>
-            <button class="font-lato">Login</button>
+            <button className="font-lato">Login</button>
             <div>
-                <p class="font-lato">Don't have an account?</p>
-                <a class="font-lato" href="#">Register</a>
+                <p className="font-lato">Don't have an account?</p>
+                <a className="font-lato" href="#">Register</a>
             </div>
         </div>
     );
