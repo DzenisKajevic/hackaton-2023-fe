@@ -1,12 +1,13 @@
 import React from 'react'
-import {logo,avatar } from '../assets'
+import {logo,avatar, clients, devices } from '../assets'
 import Footer from './Footer'
+
 
 const Welcome = () => {
   return (
     <div className='bg-primary'>
         <div className=''>
-            <div className='bg-secondary'>
+            <div className='header-welcome'>
                 <div className='px-[9.5vw]'>
                     <div className='flex justify-between pt-[50px] justify-self-start'>
                         <img src={logo}></img>
@@ -24,19 +25,19 @@ const Welcome = () => {
                 </div>
             </div>
 
-            <div className='py-[150px] flex'>
+            <div className='px-[9.5vw] py-[150px] flex'>
                 <div className='w-1/2'>
                     <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px]'>Smart Home Made Easy</p>
                     <h2 className='text-white text-[24px] xs:text-[28px] md:text-[34px] font-semibold mb-[30px]'>Simplify Your Life with Easy Device Management</h2>
                     <p className='text-grey2'>Our website offers remote management of your smart home devices, allowing you to control them from anywhere using your phone or laptop. Stay connected and in control no matter where you are, and enjoy the peace of mind that comes with knowing your home is always within reach.</p>
                 </div>
-                <div className='w-1/2'>
-                    
+                <div className='w-1/2 flex flex-1'>
+                    <img className='rounded-[20px] object-contain w-auto h-auto' src={clients}/>
                 </div>
             </div>
-            <div className='py-[150px] flex'>
+            <div className='px-[9.5vw] py-[150px] flex'>
                 <div className='w-1/2 flex flex-1'>
-                    adas
+                    <img className='rounded-[20px] aspect-auto object-contain w-auto h-auto pr-[50px]' src={devices}/>
                 </div>
                 <div className='w-1/2'>
                     <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px] text-right'>Smart Home Made Easy</p>

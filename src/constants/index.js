@@ -3,40 +3,17 @@ import {door,thermostat,bulb,avatar} from '../assets'
 export const devicesSample = [
     {
       icon:door,
-      title: "Ulazna vrata",
+      title: "Main Door",
     },
     {
       icon:bulb,
-      title: "Dnevna soba",
+      title: "Living Room",
     },
     {
       icon:thermostat,
-      title: "Glavna",
+      title: "Kitchen",
     },
-    {
-      icon:bulb,
-      title: "Djecija soba",
-    },
-    {
-      icon:bulb,
-      title: "Kupatilo",
-    },
-    {
-      icon:bulb,
-      title: "SEX",
-    },
-    {
-      icon:bulb,
-      title: "Kupatilo",
-    },
-    {
-      icon:bulb,
-      title: "Kupatilo",
-    },
-    {
-      icon:bulb,
-      title: "Kupatilo",
-    },
+    
     
 ];
 
@@ -49,34 +26,7 @@ export const profilesSample = [
     avatar:avatar,
     role: "kitagola"
   },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
-  {
-    avatar:avatar,
-    role: "kitagola"
-  },
+  
   
 ];
 

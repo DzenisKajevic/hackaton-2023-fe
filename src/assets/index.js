@@ -4,6 +4,8 @@ import door from './door.svg';
 import bulb from './bulb.svg';
 import thermostat from './thermostat.svg';
 import crown from './crown.svg';
+import clients from './clients.png';
+import devices from './devices.png';
 
 export {
     logo,
@@ -12,4 +14,6 @@ export {
     bulb,
     thermostat,
     crown,
+    clients,
+    devices,
 }
