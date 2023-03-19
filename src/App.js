@@ -8,6 +8,7 @@ import PageNotFound from './pages/PageNotFound';
 import WelcomePage from './pages/WelcomePage';
 import AddDevice from './Components/AddDevice';
 import ManageDevice from './Components/ManageDevice';
+import CreateProfilePage from './pages/CreateProfilePage';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/registration" element={ <RegisterPage /> } />
         <Route path="/login" element={ <LoginPage /> } />
         <Route path="*" element={ <PageNotFound /> } />
+        <Route path="/create_new_profile" element={ <CreateProfilePage /> } />
       </Routes >
     </BrowserRouter>
   );
