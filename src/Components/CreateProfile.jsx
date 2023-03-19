@@ -2,30 +2,31 @@ import React from 'react'
 import { registerProfile } from '../api/profileAuth';
 import { useNavigate } from "react-router-dom";
 
-async function createProfileSubmit() {
-  const name = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
-  console.log(name, password);
-  const response = await registerProfile(name, password);
-  if (response.error) {
-    console.log(response.error); // response.error.response.data -> error message
-  }
-  else {
-    // saves the token into the localStorage. 
-    const res = response.data.data;
-    // .data is needed twice because of initial data / error 
-    console.log(res);
-    //window.location.replace('/create_new_profile');
-  }
-  return response;
-}
-
 const CreateProfile = () => {
   const navigate = useNavigate();
 
   const goBack = () => {
     navigate("/profiles");
   }
+  async function createProfileSubmit() {
+    const name = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    console.log(name, password);
+    const response = await registerProfile(name, password);
+    if (response.error) {
+      console.log(response.error); // response.error.response.data -> error message
+    }
+    else {
+      goBack();
+      // saves the token into the localStorage. 
+      const res = response.data.data;
+      // .data is needed twice because of initial data / error 
+      console.log(res);
+      //window.location.replace('/create_new_profile');
+    }
+
+  }
+
   return (
     <div className='flex flex-col register-form h-[100vh] my-auto flex-auto items-center justify-center bg-primary'>
       <div onClick={ goBack } className='flex absolute top-[50px] right-[108px] go-back-button items-center cursor-pointer'>

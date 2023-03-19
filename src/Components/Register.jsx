@@ -4,8 +4,7 @@ import { register } from '../api/userAuth';
 
 function redirectIfLoggedIn() {
     if (window.localStorage.token) {
-        console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-        // not logged in so redirect to login page with the return url
+        // not logged in; redirect to login page with the return url
         window.location.replace('/');
     }
 }
@@ -27,11 +26,18 @@ async function registerSubmit() {
     }
     else {
         // saves the token into the localStorage. 
+        console.log(response);
         window.localStorage.token = response.data.data.token;
         window.localStorage.user = JSON.stringify(response.data.data.registeredUser);
+        window.localStorage.registeredProfile = JSON.stringify(response.data.data.registeredProfile);
+        window.localStorage.profileToken = response.data.data.profileToken;
+        window.localStorage.profilePassword = response.data.data.profilePass;
         // .data is needed twice because of initial data / error separation
         console.log(response);
-        window.location.replace('/');
+        await setTimeout(() => {
+            console.log("Delayed for 10 seconds.");
+        }, "10000");
+        window.location.replace('/admin_password');
     }
     return response;
 }
