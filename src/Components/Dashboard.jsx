@@ -30,7 +30,7 @@ const Dashboard = () => {
                     ))}
                     <div onClick={handleForm} className='flex flex-col items-center justify-center aspect-square rounded-[10px] add-new'>
                         <p className='text-secondary font-bold text-[60px] mb-[10px]'>+</p>
-                        <p className='text-secondary mt-[20px]'>Add new device</p>
+                        <p className='text-secondary mt-0 smd:mt-[20px]'>Add new device</p>
                     </div>
                 </div>
             </div>
