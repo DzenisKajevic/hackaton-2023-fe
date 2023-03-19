@@ -51,7 +51,7 @@ const AddDevice = () => {
     }
 
     return (
-        <div className='rounded-[20px] modal absolute bg-secondary border-[1px] border-grey4 flex flex-col px-[40px] xs:px-0 ss:w-5/6 md:w-1/2 mx-auto device-manage justify-center'>
+        <div className='rounded-[20px] modal absolute z-10 bg-secondary border-[1px] border-grey4 flex flex-col px-[40px] xs:px-0 ss:w-5/6 md:w-1/2 mx-auto device-manage justify-center'>
             <div className='h-100 flex flex-col p-[40px]'>
                 <div className='flex justify-between items-center mb-[40px]'>
                     <h5 className='text-primary text-[20px]'>Add device</h5>

@@ -24,7 +24,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className='flex items-center'>
-            <a className='primary-button' href="#">ADD NEW TASK</a>
+            {/*  
+              <a className='primary-button' href="#">ADD NEW TASK</a>
+            */}
             <div className='relative flex-col hidden ss:flex'>
               <img onClick={handleUserMenu} className='w-[50px] h-[50px] rounded-full ml-[20px] object-cover cursor-pointer' src={avatar}></img>
               <div className={`flex-col absolute top-[70px] right-0 bg-grey3 rounded-[5px] py-[20px] px-[40px] ${userMenu ? 'flex' : 'hidden'}`}>
