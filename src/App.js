@@ -17,15 +17,19 @@ function App() {
         <Route path="/welcome" element={
           <WelcomePage />
         } />
+        {/* 
         <Route path="/dashboard" exact element={
           <PrivateRoute>
             <DashboardPage />
           </PrivateRoute> } />
+        */}
+        <Route path="/dashboard" element={ <DashboardPage /> } />
+
         <Route path="/devices" exact element={
           <PrivateRoute>
             <DashboardPage />
           </PrivateRoute> } />
-          <Route path="/addDevice" element={ <AddDevice /> } />
+        <Route path="/addDevice" element={ <AddDevice /> } />
         {/*  
         <Route path="/addDevice" exact element={
             <PrivateRoute>

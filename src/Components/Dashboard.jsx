@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className='pt-[50px]'>
             <Navbar/>
             <h3 className='text-secondary font-semibold text-[34px] leading-[51x] mt-[100px] mb-[50px]'>Your Devices</h3>
-            <div className='grid grid-cols-6 mt-[50px] gap-[20px] pb-[200px]'>
+            <div className='grid grid-cols-1 xs:grid-cols-2 ss:grid-cols-3 md:grid-cols-5 mt-[50px] gap-[20px] pb-[200px]'>
                 {devicesSample.map((device)=>(
                     <Device 
                         icon={device.icon}
