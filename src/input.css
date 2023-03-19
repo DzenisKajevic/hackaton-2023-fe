@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+scrollbar-width: auto;
+scrollbar-color: #987ea0 #ffffff;
+}
+
+*::-webkit-scrollbar {
+width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: #343333;
+border-radius: 10px;
+border: 2px solid #ffffff;
+}
+
 * {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -40,6 +60,20 @@ h6 {
     background-color: #EAFF5F;
     border-radius: 6px;
     color: #142214;
+    padding: 16px 35px;
+}
+
+.secondary-button {
+  background-color:#142214;
+  border-radius: 6px;
+  color: white;
+  padding: 16px 35px;
+}
+
+.tertiary-button {
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
     padding: 16px 35px;
 }
 
@@ -88,4 +122,46 @@ h6 {
 .profile-avatar img:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.device-manage input {
+    border-radius: 6px;
+    border: 1px solid #CDCDCD;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+  position: relative;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: url("./assets/arrows.svg");
+  position: absolute;
+  top: 47px;
+  right: 20px;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.hot {
+  background-color: #FF9823;
+}
+
+.cold {
+  background-color: #4FAADF;
 }
