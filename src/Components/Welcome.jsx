@@ -25,24 +25,24 @@ const Welcome = () => {
                 </div>
             </div>
 
-            <div className='px-[9.5vw] py-[150px] flex'>
-                <div className='w-1/2'>
-                    <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px]'>Smart Home Made Easy</p>
-                    <h2 className='text-white text-[24px] xs:text-[28px] md:text-[34px] font-semibold mb-[30px]'>Simplify Your Life with Easy Device Management</h2>
-                    <p className='text-grey2'>Our website offers remote management of your smart home devices, allowing you to control them from anywhere using your phone or laptop. Stay connected and in control no matter where you are, and enjoy the peace of mind that comes with knowing your home is always within reach.</p>
+            <div className='px-[9.5vw] py-[90px] smd:py-[150px] flex flex-col smd:flex-row'>
+                <div className='w-full smd:w-1/2 mb-[60px] smd:mb-0 smd:mr-[50px]'>
+                    <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px] text-center smd:text-left'>Smart Home Made Easy</p>
+                    <h2 className='text-white text-[24px] xs:text-[28px] md:text-[34px] font-semibold mb-[30px] text-center smd:text-left'>Simplify Your Life with Easy Device Management</h2>
+                    <p className='text-grey2 text-center smd:text-left'>Our website offers remote management of your smart home devices, allowing you to control them from anywhere using your phone or laptop. Stay connected and in control no matter where you are, and enjoy the peace of mind that comes with knowing your home is always within reach.</p>
                 </div>
-                <div className='w-1/2 flex flex-1'>
-                    <img className='rounded-[20px] object-contain w-auto h-auto' src={clients}/>
+                <div className='w-full smd:w-1/2 flex flex-1'>
+                    <img className='rounded-[20px] object-contain w-auto h-auto smd:justify-around' src={clients}/>
                 </div>
             </div>
-            <div className='px-[9.5vw] py-[150px] flex'>
-                <div className='w-1/2 flex flex-1'>
-                    <img className='rounded-[20px] aspect-auto object-contain w-auto h-auto pr-[50px]' src={devices}/>
+            <div className='px-[9.5vw] py-[90px] smd:py-[150px] flex flex-col-reverse smd:flex-row'>
+                <div className='w-full smd:w-1/2 flex flex-1'>
+                    <img className='rounded-[20px] aspect-auto object-contain w-auto h-auto smd:pr-[50px] smd:justify-around' src={devices}/>
                 </div>
-                <div className='w-1/2'>
-                    <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px] text-right'>Smart Home Made Easy</p>
-                    <h2 className='text-white text-[24px] xs:text-[28px] md:text-[34px] font-semibold mb-[30px] text-right'>Simplify Smart Home Access for Your Family </h2>
-                    <p className='text-grey2 text-right'>Our website simplifies the process of adding sub accounts to your smart home. With just a few clicks, you can create multiple accounts for family members, guests, or staff, and customize their access levels. Our user-friendly interface puts you in control, ensuring that your smart home remains secure and accessible to those you trust.</p>
+                <div className='w-full smd:w-1/2 mb-[60px] smd:mb-0 smd:ml-[30px]'>
+                    <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px] text-center smd:text-right'>Smart Home Made Easy</p>
+                    <h2 className='text-white text-[24px] xs:text-[28px] md:text-[34px] font-semibold mb-[30px] text-center smd:text-right'>Simplify Smart Home Access for Your Family </h2>
+                    <p className='text-grey2 text-center smd:text-right'>Our website simplifies the process of adding sub accounts to your smart home. With just a few clicks, you can create multiple accounts for family members, guests, or staff, and customize their access levels. Our user-friendly interface puts you in control, ensuring that your smart home remains secure and accessible to those you trust.</p>
                 </div>
             </div>
             

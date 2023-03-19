@@ -3,7 +3,8 @@ import { logo } from '../assets'
 
 const Footer = () => {
   return (
-    <div className='px-[9.5vw] py-[150px]'>
+    <div className='px-[9.5vw] py-[90px] smd:py-[150px]
+    '>
         <div className='flex items-center justify-center'>
             <div className='w-[50px] h-[50px] rounded-full bg-secondary mx-[10px] social-icon flex items-center justify-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="274.22" height="512" viewBox="0 0 274.22 512">
