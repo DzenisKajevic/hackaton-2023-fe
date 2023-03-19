@@ -12,12 +12,21 @@ export async function registerProfile(name, password) {
         }));
 }
 
-export async function loginToProfile(_id, profilePassword) {
+export async function loginToProfile(_id, password) {
     return await resolve(
         axios({
             method: 'post',
             url: 'http://' + backendHost + ':' + backendPort + '/api/profiles/profileLogin',
-            data: { _id, profilePassword },
+            data: { _id, password },
+            headers: { 'Authorization': 'Bearer ' + window.localStorage.token }
+        }));
+}
+
+export async function listProfiles() {
+    return await resolve(
+        axios({
+            method: 'get',
+            url: 'http://' + backendHost + ':' + backendPort + '/api/profiles/list-profiles',
             headers: { 'Authorization': 'Bearer ' + window.localStorage.token }
         }));
 }

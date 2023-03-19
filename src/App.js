@@ -20,46 +20,44 @@ function App() {
           <WelcomePage />
         } />
         <Route path="/profiles" element={
-          <ProfilesPage />
-        } />
-        <Route path="/profile_login" element={
-          <LoginProfilePage />
-        } />
-        {/* 
-        <Route path="/dashboard" exact element={
           <PrivateRoute>
-            <DashboardPage />
-          </PrivateRoute> } />
-        */}
-        <Route path="/dashboard" element={ <DashboardPage /> } />
-
-        <Route path="/devices" exact element={
-          <PrivateRoute>
-            <DashboardPage />
-          </PrivateRoute> } />
-        <Route path="/addDevice" element={ <AddDevice /> } />
-        <Route path="/manageDevice" element={ <ManageDevice /> } />
-        {/*  
-        <Route path="/addDevice" exact element={
+            <ProfilesPage />
+          </PrivateRoute>
+        } />
+        {
+          <Route path="/dashboard" exact element={
             <PrivateRoute>
-              <AddDevice />
+              <DashboardPage />
             </PrivateRoute> } />
-        
+        }
+        <Route path="/addDevice" exact element={
+          <PrivateRoute>
+            <AddDevice />
+          </PrivateRoute> } />
+
         <Route path="/manageDevice" exact element={
           <PrivateRoute>
             <ManageDevice />
           </PrivateRoute> } />
-        */}
-        <Route path="/" element={
+        { <Route path="/" element={
           <PrivateRoute>
             <ProfilesPage />
+          </PrivateRoute> } /> }
+        <Route path="/profile_login" exact element={
+          <PrivateRoute>
+            <LoginProfilePage />
           </PrivateRoute> } />
         <Route path="/registration" element={ <RegisterPage /> } />
         <Route path="/login" element={ <LoginPage /> } />
         <Route path="*" element={ <PageNotFound /> } />
-        <Route path="/create_new_profile" element={ <CreateProfilePage /> } />
-
-        <Route path="/admin_password" element={ <AdminPasswordPage /> } />
+        <Route path="/create_new_profile" exact element={
+          <PrivateRoute>
+            <CreateProfilePage />
+          </PrivateRoute> } />
+        <Route path="/admin_password" exact element={
+          <PrivateRoute>
+            <AdminPasswordPage />
+          </PrivateRoute> } />
       </Routes >
     </BrowserRouter>
   );
