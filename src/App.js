@@ -1,11 +1,28 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import ProfilesPage from './pages/ProfilesPage';
+import { PrivateRoute } from './pages/PrivateRoute';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
   return (
-    <ProfilesPage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/dashboard" exact element={
+          <PrivateRoute>
+            <DashboardPage />
+          </PrivateRoute> } />
+        <Route path="/" element={
+          <PrivateRoute>
+            <ProfilesPage />
+          </PrivateRoute> } />
+        <Route path="/registration" element={ <RegisterPage /> } />
+        <Route path="/login" element={ <LoginPage /> } />
+        <Route path="*" element={ <PageNotFound /> } />
+      </Routes >
+    </BrowserRouter>
   );
 }
 
