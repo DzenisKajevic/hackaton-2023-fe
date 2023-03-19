@@ -10,6 +10,7 @@ import AddDevice from './Components/AddDevice';
 import ManageDevice from './Components/ManageDevice';
 import CreateProfilePage from './pages/CreateProfilePage';
 import LoginProfilePage from './pages/LoginProfilePage';
+import AdminPasswordPage from './pages/AdminPasswordPage';
 
 function App() {
   return (
@@ -57,6 +58,8 @@ function App() {
         <Route path="/login" element={ <LoginPage /> } />
         <Route path="*" element={ <PageNotFound /> } />
         <Route path="/create_new_profile" element={ <CreateProfilePage /> } />
+
+        <Route path="/admin_password" element={ <AdminPasswordPage /> } />
       </Routes >
     </BrowserRouter>
   );
