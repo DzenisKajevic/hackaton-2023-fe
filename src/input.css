@@ -61,6 +61,13 @@ h6 {
     border-radius: 6px;
     color: #142214;
     padding: 16px 35px;
+    transition: all 0.2s;
+}
+
+.primary-button:hover {
+    background-color: black;
+    border-radius: 6px;
+    color: #EAFF5F;
 }
 
 .secondary-button {
@@ -68,6 +75,13 @@ h6 {
   border-radius: 6px;
   color: white;
   padding: 16px 35px;
+  transition: all 0.2s;
+}
+
+.secondary-button {
+    background-color: white;
+    border-radius: 6px;
+    color: #142214;
 }
 
 .tertiary-button {
@@ -75,6 +89,13 @@ h6 {
     border-radius: 6px;
     color: white;
     padding: 16px 35px;
+    transition: all 0.2s;
+}
+
+.tertiary-button:hover {
+    background-color: white;
+    border-radius: 6px;
+    color: #142214;
 }
 
 .register-form button {
@@ -164,4 +185,16 @@ select::-ms-expand {
 
 .cold {
   background-color: #4FAADF;
+}
+
+.go-back-button {
+    transition: all 0.2s;
+}
+
+.go-back-button:hover #Ellipse_6 {
+    fill: white;
+}
+
+.go-back-button:hover #interface-arrows-button-up {
+    stroke: #818E9C;
 }

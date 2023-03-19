@@ -17,6 +17,9 @@ function App() {
         <Route path="/welcome" element={
           <WelcomePage />
         } />
+        <Route path="/profiles" element={
+          <ProfilesPage />
+        } />
         {/* 
         <Route path="/dashboard" exact element={
           <PrivateRoute>
@@ -30,16 +33,18 @@ function App() {
             <DashboardPage />
           </PrivateRoute> } />
         <Route path="/addDevice" element={ <AddDevice /> } />
+        <Route path="/manageDevice" element={ <ManageDevice /> } />
         {/*  
         <Route path="/addDevice" exact element={
             <PrivateRoute>
               <AddDevice />
             </PrivateRoute> } />
-        */}
+        
         <Route path="/manageDevice" exact element={
           <PrivateRoute>
             <ManageDevice />
           </PrivateRoute> } />
+        */}
         <Route path="/" element={
           <PrivateRoute>
             <ProfilesPage />

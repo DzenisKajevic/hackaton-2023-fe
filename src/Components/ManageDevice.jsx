@@ -67,9 +67,26 @@ const ManageDevice = (props) => {
 
 
             {isShown && <Userslist />}
+            {/*  
             <button onClick={handleUsers} type="submit" className='border-[1px] border-grey4 p-[16px] rounded-[6px] flex-1 mb-[20px]'>
               { isShown ? "Hide" : "Add Permission"}
             </button>
+            */}
+            <div className={`gap-[20px] ${isShown ? 'hidden': 'flex'}`}>
+              <button onClick={handleUsers} type="submit" className='border-[1px] border-grey4 p-[16px] rounded-[6px] flex-1 mb-[20px]'>
+                Add Permisions
+              </button>
+              <button onClick={handleUsers} type="submit" className='border-[1px] border-grey4 p-[16px] rounded-[6px] flex-1 mb-[20px]'>
+                Remove Permisions
+              </button>
+            </div>
+
+            <div className={`gap-[20px] ${isShown ? 'flex': 'hidden'}`}>
+              <button onClick={handleUsers} type="submit" className='border-[1px] border-grey4 p-[16px] rounded-[6px] flex-1 mb-[20px]'>
+                Hide
+              </button>
+            </div>
+            
             {isShown && (
               <button type="submit" className='bg-accent text-primary p-[16px] rounded-[6px] flex-1'>Submit</button>
             )}
