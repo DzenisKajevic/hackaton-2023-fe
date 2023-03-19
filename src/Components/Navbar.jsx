@@ -31,7 +31,7 @@ const Navbar = () => {
           <img onClick={ handleUserMenu } className='w-[50px] h-[50px] rounded-full ml-[20px] object-cover cursor-pointer' src={ avatar }></img>
           <div className={ `flex-col absolute top-[70px] right-0 bg-grey3 rounded-[5px] py-[20px] px-[40px] ${userMenu ? 'flex' : 'hidden'}` }>
             <a className='p-[10px] text-white text-left' href='#'>Settings</a>
-            <a className='p-[10px] text-white text-left' href='#'>Log Out</a>
+            <a onClick={ () => { localStorage.clear(); window.location.replace('/'); } } className='p-[10px] text-white text-left' href='#'>Log Out</a>
           </div>
         </div>
       </div>
