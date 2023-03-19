@@ -9,6 +9,7 @@ import WelcomePage from './pages/WelcomePage';
 import AddDevice from './Components/AddDevice';
 import ManageDevice from './Components/ManageDevice';
 import CreateProfilePage from './pages/CreateProfilePage';
+import LoginProfilePage from './pages/LoginProfilePage';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         } />
         <Route path="/profiles" element={
           <ProfilesPage />
+        } />
+        <Route path="/profile_login" element={
+          <LoginProfilePage />
         } />
         {/* 
         <Route path="/dashboard" exact element={

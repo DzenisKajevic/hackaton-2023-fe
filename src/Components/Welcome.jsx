@@ -1,23 +1,29 @@
 import React from 'react'
 import {logo,avatar } from '../assets'
+import Footer from './Footer'
 
 const Welcome = () => {
   return (
     <div className='bg-primary'>
-        <div className='px-[9.5vw]'>
-            <div className='flex justify-between pt-[50px] justify-self-start'>
-                <img src={logo}></img>
-                <div className='flex items-center'>
-                    <a className='tertiary-button' href="#">Login</a>
+        <div className=''>
+            <div className='bg-secondary'>
+                <div className='px-[9.5vw]'>
+                    <div className='flex justify-between pt-[50px] justify-self-start'>
+                        <img src={logo}></img>
+                        <div className='flex items-center'>
+                            <a className='tertiary-button' href="#">Login</a>
+                        </div>
+                    </div>
+                    <div className='h-[calc(100vh-108px)] flex items-center'>
+                        <div className='flex flex-col w-full sm:w-3/4 justify-self-center'>
+                            <p className='text-[12x] tracking-[2px] text-grey4 mb-[30px]'>Smart Home Made Easy</p>
+                            <h1 className='text-white text-[36px] xs:text-[48px] md:text-[60px] font-semibold mb-[30px]'>Take care of your smart home</h1>
+                            <a className='primary-button w-fit' href="#">Get Started</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className='h-[calc(100vh-108px)] flex items-center'>
-                <div className='flex flex-col w-full sm:w-3/4 justify-self-center'>
-                    <p className='text-[12x] tracking-[2px] text-grey4 mb-[30px]'>Smart Home Made Easy</p>
-                    <h1 className='text-white text-[36px] xs:text-[48px] md:text-[60px] font-semibold mb-[30px]'>Take care of your smart home</h1>
-                    <a className='primary-button w-fit' href="#">Get Started</a>
-                </div>
-            </div>
+
             <div className='py-[150px] flex'>
                 <div className='w-1/2'>
                     <p className='text-[12px] tracking-[2px] text-grey4 mb-[30px]'>Smart Home Made Easy</p>
@@ -40,6 +46,7 @@ const Welcome = () => {
             </div>
             
         </div>
+        <Footer/>
     </div>
   )
 }

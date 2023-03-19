@@ -198,3 +198,25 @@ select::-ms-expand {
 .go-back-button:hover #interface-arrows-button-up {
     stroke: #818E9C;
 }
+
+.social-icon {
+    cursor: pointer;
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+}
+
+.social-icon:hover {
+    background-color: #403D3D;
+}
+
+.social-icon:hover path {
+    fill: white;
+}
+
+.social-icon path {
+    fill: #403D3D;
+}
