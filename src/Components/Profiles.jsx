@@ -30,6 +30,7 @@ const Profiles = () => {
                 <p className='text-[60px] text-secondary font-bold mb-[10px]'>+</p>
             </div>
         </div>
+        <a href="#" className='mt-[100px] smd:mt-[200px] text-white text-[20px] font-medium border-[1px] border-red-500 px-[12px] py-[4px] rounded-[6px] hover:bg-red-500'>LOG OUT</a>
     </div>
   )
 }

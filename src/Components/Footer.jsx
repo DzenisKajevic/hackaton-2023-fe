@@ -3,7 +3,7 @@ import { logo } from '../assets'
 
 const Footer = () => {
   return (
-    <div className='px-[9.5vw] py-[90px] smd:py-[150px]
+    <div className='px-[9.5vw] py-[90px] smd:py-[150px] bg-primary
     '>
         <div className='flex items-center justify-center'>
             <div className='w-[50px] h-[50px] rounded-full bg-secondary mx-[10px] social-icon flex items-center justify-center'>
