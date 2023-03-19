@@ -27,6 +27,10 @@ async function loginSubmit() {
     return response;
 }
 
+function redirectToRegistrationPage() {
+    window.location.replace('/registration');
+}
+
 const Login = () => {
     redirectIfLoggedIn();
 
@@ -44,7 +48,7 @@ const Login = () => {
                     <input type="password" id="password" name="password" />
                 </div>
                 <button type='submit' onClick={ loginSubmit } className='text-[14px] text-secondary text-center mb-[20px]'>Login</button>
-                <p className='text-text text-center'>Don't have an account? <span className='text-secondary'>Register</span></p>
+                <p className='text-text text-center'>Don't have an account? <span className='text-secondary cursor-pointer' onClick={ redirectToRegistrationPage }>Register</span></p>
             </div>
         </div>
     );
