@@ -62,7 +62,6 @@ const ManageDevice = (props) => {
 
             <div onClick={handleLocker} className='mb-[40px] cursor-pointer select-none'>
               { locked ? <Locked/> : <Unlocked/>}
-            
             </div>
             
 

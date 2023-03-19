@@ -4,6 +4,7 @@ import { addDevice } from '../api/deviceCalls';
 const AddDevice = () => {
     const [deviceType, setDeviceType] = useState("Bulb");
 
+
     useEffect(() => {
         console.log("Changed to: " + deviceType);
     }, [deviceType]);
@@ -70,6 +71,59 @@ const AddDevice = () => {
                     <label className="mb-[7px]" htmlFor="">Device Name</label>
                     <input className='p-[16px]' type="text" id="deviceName" name="deviceName" placeholder="Living room lights" />
                 </div>
+
+                <div className={`${deviceType==="thermostat" ? 'flex flex-col' : 'hidden'}`}>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Model</label>
+                        <input className='p-[16px]' type="text" id="modelthermostat" name="modelthermostat" placeholder="Thermostat model" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                        <input className='p-[16px]' type="text" id="manufacturerthermostat" name="manufacturerthermostat" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Firmvare Version</label>
+                        <input className='p-[16px]' type="text" id="firmvareversionthermostat" name="firmvareversionthermostet" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Hvac</label>
+                        <input className='p-[16px]' type="text" id="hvacthermostat" name="hvacthermostat" />
+                    </div>
+                </div>
+
+                <div className={`${deviceType==="light" ? 'flex flex-col' : 'hidden'}`}>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Model</label>
+                        <input className='p-[16px]' type="text" id="modeltherlight" name="modellight" placeholder="Thermostat model" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                        <input className='p-[16px]' type="text" id="manufacturerlight" name="manufacturerlight" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Color</label>
+                        <input className='p-[16px]' type="text" id="colorlight" name="colorlight" />
+                    </div>
+                </div>
+
+                <div className={`${deviceType==="lock" ? 'flex flex-col' : 'hidden'}`}>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Model</label>
+                        <input className='p-[16px]' type="text" id="modellock" name="modellock" placeholder="Lock model" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                        <input className='p-[16px]' type="text" id="manufacturerlock" name="manufacturerlock" />
+                    </div>
+                    <div className='flex flex-col mb-[30px]'>
+                        <label className="mb-[7px]" htmlFor="">Firmvare Version</label>
+                        <input className='p-[16px]' type="text" id="firmvareversionlock" name="firmvareversionlock" />
+                    </div>
+                </div>
+
+
+
+
                 <div className='flex flex-col mb-[30px]'>
                     <label className="mb-[7px]" htmlFor="">IP Address</label>
                     <input className='p-[16px]' type="text" id="ipAddress" name="ipAddress" defaultValue={ generateIP() } /* placeholder="192.167.1.1" */ />
@@ -83,5 +137,69 @@ const AddDevice = () => {
         </div>
     )
 }
+
+function AddThermostat() {
+  
+    return (
+        <div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Model</label>
+                <input className='p-[16px]' type="text" id="modelthermostat" name="modelthermostat" placeholder="Thermostat model" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                <input className='p-[16px]' type="text" id="manufacturerthermostat" name="manufacturerthermostat" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Firmvare Version</label>
+                <input className='p-[16px]' type="text" id="firmvareversionthermostat" name="firmvareversionthermostet" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Hvac</label>
+                <input className='p-[16px]' type="text" id="hvacthermostat" name="hvacthermostat" />
+            </div>
+        </div>
+    );
+  }
+
+  function AddLight() {
+  
+    return (
+        <div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Model</label>
+                <input className='p-[16px]' type="text" id="modeltherlight" name="modellight" placeholder="Thermostat model" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                <input className='p-[16px]' type="text" id="manufacturerlight" name="manufacturerlight" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Color</label>
+                <input className='p-[16px]' type="text" id="colorlight" name="colorlight" />
+            </div>
+        </div>
+    );
+  }
+
+  function AddLock() {
+  
+    return (
+        <div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Model</label>
+                <input className='p-[16px]' type="text" id="modellock" name="modellock" placeholder="Lock model" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Manufacturer</label>
+                <input className='p-[16px]' type="text" id="manufacturerlock" name="manufacturerlock" />
+            </div>
+            <div className='flex flex-col mb-[30px]'>
+                <label className="mb-[7px]" htmlFor="">Firmvare Version</label>
+                <input className='p-[16px]' type="text" id="firmvareversionlock" name="firmvareversionlock" />
+            </div>
+        </div>
+    );
+  }
 
 export default AddDevice

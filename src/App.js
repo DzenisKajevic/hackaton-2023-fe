@@ -25,10 +25,13 @@ function App() {
           <PrivateRoute>
             <DashboardPage />
           </PrivateRoute> } />
+          <Route path="/addDevice" element={ <AddDevice /> } />
+        {/*  
         <Route path="/addDevice" exact element={
-          <PrivateRoute>
-            <AddDevice />
-          </PrivateRoute> } />
+            <PrivateRoute>
+              <AddDevice />
+            </PrivateRoute> } />
+        */}
         <Route path="/manageDevice" exact element={
           <PrivateRoute>
             <ManageDevice />
