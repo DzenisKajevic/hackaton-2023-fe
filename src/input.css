@@ -226,3 +226,14 @@ select::-ms-expand {
     background-size: cover;
     background-position: bottom;
 }
+
+.modal {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    margin-top: 7%;
+    transform: translate(-50%, 0%);
+}

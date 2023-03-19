@@ -4,10 +4,19 @@ import Device from './Device'
 import { door } from '../assets'
 import { devicesSample } from '../constants'
 import Footer from './Footer'
+import AddDevice from './AddDevice'
+import {useState} from 'react'
 
 const Dashboard = () => {
+  const [isForm, showForm] = useState(false);
+
+  const handleForm = event => {
+    showForm(current => !current);
+  };
+
   return (
-    <div>
+    <div className='min-h-[100vh] h-full relative'>
+        {isForm && <AddDevice/>}
         <div className='px-[9.5vw] min-h-[100vh] bg-primary'>
             <div className='pt-[50px]'>
                 <Navbar/>
@@ -19,7 +28,7 @@ const Dashboard = () => {
                             title={device.title}
                         />
                     ))}
-                    <div className='flex flex-col items-center justify-center aspect-square rounded-[10px] add-new'>
+                    <div onClick={handleForm} className='flex flex-col items-center justify-center aspect-square rounded-[10px] add-new'>
                         <p className='text-secondary font-bold text-[60px] mb-[10px]'>+</p>
                     </div>
                 </div>
@@ -29,5 +38,7 @@ const Dashboard = () => {
     </div>
   )
 }
+
+
 
 export default Dashboard
