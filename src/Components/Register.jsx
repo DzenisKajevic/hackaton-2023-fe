@@ -10,6 +10,10 @@ function redirectIfLoggedIn() {
     }
 }
 
+function redirectToLoginPage() {
+    window.location.replace('/login');
+}
+
 async function registerSubmit() {
     //e.preventDefault();
     const first_name = document.getElementById("firstname").value;
@@ -58,7 +62,7 @@ const Register = () => {
                     <input type="password" id="password" name="password" />
                 </div>
                 <button type='submit' onClick={ registerSubmit } className='text-[14px] text-secondary text-center mb-[20px]'>Register</button>
-                <p className='text-text text-center'>Already have an account? <span className='text-secondary'>Login</span></p>
+                <p className='text-text text-center'>Already have an account? <span onClick={ redirectToLoginPage } className='text-secondary cursor-pointer'>Login</span></p>
             </div>
         </div>
     );
