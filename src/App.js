@@ -4,10 +4,11 @@ import DashboardPage from './pages/DashboardPage';
 import ProfilesPage from './pages/ProfilesPage';
 import AddDevice from './Components/AddDevice';
 import ManageDevices from './Components/ManageDevices';
+import WelcomePage from './pages/WelcomePage';
 
 function App() {
   return (
-    <ManageDevices />
+    <WelcomePage />
   );
 }
 
